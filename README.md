@@ -86,16 +86,16 @@ cd ~/zenoh && ./start_bridge.sh
 ### Examples
 ```bash
 # Check bridge version
-curl http://100.92.165.120:8000/@/*/dds/version
+curl 'http://100.92.165.120:8000/@/*/dds/version'
 
 # List all active routes  
-curl http://100.92.165.120:8000/@/*/dds/route/**
+curl 'http://100.92.165.120:8000/@/*/dds/route/**'
 
 # Get robot low-level state
-curl http://100.92.165.120:8000/go2/rt/lowstate
+curl 'http://100.92.165.120:8000/go2/rt/lowstate'
 
 # Get lidar data
-curl http://100.92.165.120:8000/go2/rt/utlidar/cloud
+curl 'http://100.92.165.120:8000/go2/rt/utlidar/cloud'
 ```
 
 ## 🔌 Topic Mapping
